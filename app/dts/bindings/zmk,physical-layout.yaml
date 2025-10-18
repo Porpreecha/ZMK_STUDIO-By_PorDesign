@@ -1,18 +1,16 @@
 properties:
   label:
+    description: "Pordesign"
     type: string
-    required: true
-  display-name:
-    type: string
-    required: true
+  rows:
+    description: "5"
+    type: integer
+  columns:
+    description: "7"
+    type: integer
   transform:
+    description: "Matrix transform node"
     type: phandle
-    required: true
-  row_count:
-    type: int
-  column_count:
-    type: int
-  positions:
-    type: array
-    items:
-      type: int
+  display-name:
+    description: "Pordesign"
+    type: string
