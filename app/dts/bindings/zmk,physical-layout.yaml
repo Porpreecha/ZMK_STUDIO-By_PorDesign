@@ -1,4 +1,3 @@
-# zmk/app/dts/bindings/zmk,physical-layout.yaml
 properties:
   label:
     type: string
