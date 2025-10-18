@@ -1,3 +1,4 @@
+description: "Physical layout for my 5x7 keyboard"
 properties:
   label:
     description: "Pordesign"
@@ -14,3 +15,9 @@ properties:
   display-name:
     description: "Pordesign"
     type: string
+required:
+  - label
+  - rows
+  - columns
+  - transform
+  - display-name
