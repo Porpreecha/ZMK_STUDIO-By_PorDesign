@@ -1,0 +1,19 @@
+# zmk/app/dts/bindings/zmk,physical-layout.yaml
+properties:
+  label:
+    type: string
+    required: true
+  display-name:
+    type: string
+    required: true
+  transform:
+    type: phandle
+    required: true
+  row_count:
+    type: int
+  column_count:
+    type: int
+  positions:
+    type: array
+    items:
+      type: int
