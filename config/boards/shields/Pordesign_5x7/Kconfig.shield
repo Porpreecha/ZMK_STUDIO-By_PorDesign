@@ -1,2 +1,5 @@
-config SHIELD_PORDESIGN_5X7
-    def_bool y
+menu "PorDesign 5x7 shield"
+    config ZMK_SHIELD_PORDESIGN_5X7
+        bool "PorDesign 5x7"
+        default y
+endmenu
