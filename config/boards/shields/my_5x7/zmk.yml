@@ -1,8 +1,0 @@
-file_format: "1"
-id: my_5x7
-name: My 5x7 Keyboard
-type: shield
-url: https://github.com/Porpreecha/POR_DESIGN
-requires: [nice_nano_v2]
-features:
-  - keys

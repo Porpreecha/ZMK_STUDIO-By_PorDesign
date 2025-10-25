@@ -1,0 +1,2 @@
+config SHIELD_PORDESIGN_5X7
+    def_bool y

@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ZMK: Build nice_nano_v2 + Pordesign_5x7",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=Pordesign_5x7 -DZMK_CONFIG=./config"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "ZMK: Clean",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "rm -rf build"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "ZMK: Monitor",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "python3 -m serial.tools.miniterm /dev/ttyACM0 115200"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp Q &kp W &kp E &kp R &kp T &kp KP_7 &kp KP_8
+                &kp A &kp S &kp D &kp F &kp G &kp KP_4 &kp KP_5
+                &kp Z &kp X &kp C &kp V &kp B &kp KP_1 &kp KP_2
+                &kp U &kp I &kp O &kp P &kp H &kp KP_9 &kp KP_0
+                &kp SPACE &kp ENTER &kp TAB &kp ESC &kp BSPC &kp KP_MINUS &kp KP_PLUS
+            >;
+        };
+    };
+};

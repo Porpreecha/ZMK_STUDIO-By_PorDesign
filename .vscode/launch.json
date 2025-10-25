@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach Cortex-DAPLink (pyOCD)",
+      "type": "cortex-debug",
+      "request": "attach",
+      "servertype": "pyocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/zephyr/zephyr.elf",
+      "device": "NRF52840"
+    },
+    {
+      "name": "Build then Flash",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/zephyr/zephyr.elf",
+      "preLaunchTask": "ZMK: Build nice_nano_v2 + Pordesign_5x7",
+      "stopAtEntry": false
+    }
+  ]
+}

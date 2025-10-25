@@ -1,0 +1,20 @@
+{
+  "name": "ZMK Devcontainer",
+  "context": "..",
+  "dockerFile": "Dockerfile",
+  "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--cap-add=SYS_PTRACE"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "ms-python.python",
+    "marus25.cortex-debug"
+  ],
+  "postCreateCommand": "pip3 install --user west pyocd",
+  "remoteUser": "vscode"
+}
